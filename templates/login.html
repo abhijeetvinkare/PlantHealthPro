@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="contact-form-wrapper d-flex justify-content-center">
+  <form action="{{ url_for('login') }}" class="contact-form" method="post">
+    <h5 class="title">LOGIN</h5>
+   
+    {% if error_message %}
+    <div id="alert" class="alert alert-danger" role="alert">
+      {{ error_message }}
+    </div>
+    {% endif %}
+    {% if success_message %}
+    <div class="alert alert-success" role="alert">
+      {{ success_message }}
+    </div>
+    {% endif %}
+  
+    <div id="login-text-input-div" class="contact-from-div">
+      <input type="email" class="form-control rounded border-white mb-3 form-input" id="email" name="email" placeholder="Email" required/>
+    </div>
+    <div id="login-text-input-div" class="contact-from-div">
+      <input type="password" class="form-control rounded border-white mb-3 form-input" id="password" name="password" placeholder="Password" required/>
+    </div>
+      <button id="contanct-submti-btn" class="contanct-submti-btn" type="submit" value="Send">Let's Detect</button>
+
+      <div class="login-or-div">
+      <p id="login-or-div-child"> OR </p>
+
+      <a id="login-or-div-child" href="/signup"><u>Sign Up</u></a>
+      </div>
+  </form>
+</div>
+
+{% block extra_css %}
+<style>
+  body {
+    background-image: url("/static/wave/wave.svg");
+    background-size: cover;
+  }
+</style>
+{% endblock %}
+
+<script>
+  // Get user data from server response and store in local storage
+  const form = document.querySelector('form')
+  form.addEventListener('submit', (event) => {
+    event.preventDefault()
+    fetch('/login', {
+      method: 'POST',
+      body: new FormData(form)
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data)
+      if (data._id) {
+        localStorage.setItem('user', JSON.stringify(data))
+        window.location.href = '/detect'
+      } else {
+        const errorDiv = document.createElement('div')
+        errorDiv.setAttribute('id', 'alert');
+        errorDiv.classList.add('alert', 'alert-danger')
+        errorDiv.role = 'alert'
+        errorDiv.textContent = data.error
+        form.prepend(errorDiv)
+      }
+    })
+    .catch(error => console.error(error))
+  })
+
+
+    // Remove alert message when user interacts with form
+    const formInputs = form.querySelectorAll('input')
+    formInputs.forEach(input => {
+      input.addEventListener('input', () => {
+        const existingAlert = form.querySelector('#alert')
+        if (existingAlert) {
+          existingAlert.remove()
+        }
+      })
+    })
+    
+</script>
+
+{% endblock %}

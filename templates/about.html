@@ -1,0 +1,34 @@
+{% extends "base.html" %} {% block content %}
+<div class="home-main-div">
+  <div class="home-right">
+    <div class="about-right-child">
+      <h1 class="home-right-heading">About</h1>
+      <p class="about-right-para">
+        Our website provides the latest technology to help farmers and gardeners
+        detect plant diseases before they become a problem. With accurate and
+        timely diagnosis, we empower growers to take action and protect their
+        crops, resulting in increased yields and reduced costs. Our mission is
+        to promote sustainable agriculture and ensure a healthy food supply for
+        generations to come.
+        <br /><br />
+      </p>
+    </div>
+  </div>
+  <div class="home-left">
+    <img
+      class="front-image-about"
+      src="{{ url_for('static', filename='imgg.png') }}"
+    />
+  </div>
+</div>
+
+{% block extra_css %}
+<style>
+  body {
+    background-image: url("/static/wave/about.svg");
+    background-size: cover;
+  }
+</style>
+{% endblock %}
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="contact-form-wrapper d-flex justify-content-center">
+    <form action="/contact" method="post" class="contact-form">
+      <h5 class="title">Contact us</h5>
+      <p class="description">Feel free to contact us if you need any assistance, any help or another question.
+      </p>
+
+      {% if error_message %}
+      <div class="alert alert-danger" role="alert">
+        {{ error_message }}
+      </div>
+      {% endif %}
+      {% if success_message %}
+      <div class="alert alert-success" role="alert">
+        {{ success_message }}
+      </div>
+      {% endif %}
+      
+      <div className="contact-from-div">
+        <input type="text" class="form-control rounded border-white mb-3 form-input" id="name" name="name" placeholder="Name" required/>
+      </div>
+      <div className="contact-from-div">
+        <input id="contact-input-email" type="email" class="form-control rounded border-white mb-3 form-input" name="email" placeholder="Email" required/>
+      </div>
+      <div className="contact-from-div">
+        <textarea id="message" class="form-control rounded border-white mb-3 form-text-area" rows="5" cols="30" name="message" placeholder="Message" required></textarea>
+      </div>
+        <button id="contanct-submti-btn" className="contanct-submti-btn" type="submit" value="Send">SEND</button>
+    </form>
+  </div>
+
+  {% block extra_css %}
+<style>
+  body {
+    background-image: url("/static/wave/contact.svg");
+    background-size: cover;
+  }
+</style>
+{% endblock %}
+
+{% endblock %}

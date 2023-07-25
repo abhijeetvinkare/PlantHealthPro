@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="home-main-div">
+    <div class="home-right">
+      <div class="home-right-child">
+      <h1 class="home-right-heading">Healthy plants, healthy world: detect diseases early with our cutting-edge technology.</h1>
+      <p class="home-right-para">Our website provides the latest technology to help farmers and gardeners detect plant diseases before they become a problem.</p>
+      <a href="/detect">
+    <button class="home-left-button" > Let's Detect </button>
+      </a>
+</div>
+    </div >
+    <div class="home-left">
+      <img class="front-image" src="{{ url_for('static', filename='image.png') }}">
+    </div>
+  </div>
+
+  {% block extra_css %}
+  <style>
+    body {
+      background-image: url("/static/wave/home.svg");
+      background-size: cover;
+    }
+  </style>
+  {% endblock %}
+  
+{% endblock %}

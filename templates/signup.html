@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="contact-form-wrapper d-flex justify-content-center">
+  <form action="/signup" method="post" class="contact-form">
+    <h5 class="title">Sign Up</h5>
+    {% if error_message %}
+    <div class="alert alert-danger" role="alert">
+      {{ error_message }}
+    </div>
+    {% endif %}
+    {% if success_message %}
+    <div class="alert alert-success" role="alert">
+      {{ success_message }}
+    </div>
+    {% endif %}
+    <div id="login-text-input-div"className="contact-from-div">
+        <input type="text" class="form-control rounded border-white mb-3 form-input" id="name" name="name" placeholder="Name" required/>
+      </div>
+    <div id="login-text-input-div"className="contact-from-div">
+      <input type="email" class="form-control rounded border-white mb-3 form-input" id="email" name="email" placeholder="Email" required/>
+    </div>
+    <div id="login-text-input-div" className="contact-from-div">
+      <input type="Password" class="form-control rounded border-white mb-3 form-input" id="password" name="password" placeholder="Password" required/>
+    </div>
+      <button id="contanct-submti-btn" className="contanct-submti-btn" type="submit" value="Send">Sign Up</button>
+      <div class="login-or-div">
+        <p id="login-or-div-child"> OR </p>
+  
+        <a id="login-or-div-child" href="/login"><u>Log In</u></a>
+      </div>
+  </form>
+</div>
+
+{% block extra_css %}
+<style>
+  body {
+    background-image: url("/static/wave/signup.svg");
+    background-size: cover;
+  }
+</style>
+{% endblock %}
+
+{% endblock %}
