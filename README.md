@@ -52,6 +52,16 @@ Contributions are welcome! If you want to contribute to this project, follow the
 
 https://plant-health-pro.onrender.com/
 
+## Preview
+
+Here are some screenshots of the PlantHealthPro app:
+
+<!-- Add preview images here -->
+![Preview 1](Testing_Leaf/download.jpg)
+![Preview 2](Testing_Leaf/download.jpg)
+![Preview 3](Testing_Leaf/download.jpg)
+<!-- Add more images if needed -->
+
 
 ## 👩‍🍳 Contact
 
