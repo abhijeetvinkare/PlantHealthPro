@@ -293,14 +293,13 @@ input[type="file"] {
 }
 .home-right-para{
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 19px;
     font-family: 'Libre Franklin', sans-serif;
     color: #0e172c;
     text-align: justify;
     line-height: 34px;
     word-spacing: 5px;
     width: 500px;
-    font-weight: 300;
 }
 .home-right-child{
     margin-top: 50px;
@@ -469,10 +468,9 @@ input[type="submit"]:hover{
 }
 .about-right-para{
   margin-top: 20px;
-  font-size: 18px;
+  font-size: 19px;
   font-family: 'Libre Franklin', sans-serif;
   color: #0e172c;
-  font-weight: 300;
   text-align: justify;
   line-height: 34px;
   word-spacing: 5px;
