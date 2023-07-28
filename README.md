@@ -11,7 +11,7 @@ As a frontend developer for this project, I played a key role in enhancing the u
 - **Image Upload**: I developed the frontend components for users to upload image.
 - **User Authentication**: I implemented the frontend authentication logic to allow users to create accounts and securely log in to the app.
 - **Responsiveness**: I made the entire application responsive, ensuring that it looks and functions well across various screen sizes and devices, including desktops, tablets, and mobile phones.
-- **Additional Pages**: I added some pages to the app, including a contact page to enable users to get in touch with the FoliumScope team easily.
+- **Additional Pages**: I added some pages to the app, including a contact page to enable users to get in touch with the PlantHealthPro team easily.
 
 
 ## 🚀 Technologies Used
