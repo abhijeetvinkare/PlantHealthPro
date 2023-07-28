@@ -38,7 +38,7 @@ str_id = str(obj_id)
 
 
 # Define database connection
-client = MongoClient('mongodb+srv://sopolaw345:123@srm.uhy7bqk.mongodb.net')
+client = MongoClient('-- Put Your MongoDB Url here --')
 db = client['Plantix']
 users = db['users']
 contacts = db['contacts']
