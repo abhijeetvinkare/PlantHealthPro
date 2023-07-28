@@ -50,10 +50,8 @@ Contributions are welcome! If you want to contribute to this project, follow the
 
 ## License
 
-This project is licensed under the [MIT License].
+This project is licensed under the [MIT License](https://github.com/abhijeetvinkare/PlantHealthPro/blob/main/LICENSE).
 
 ## Contact
 
-If you have any questions or suggestions regarding the frontend development of the project, feel free to reach out to me at [your-email@example.com](mailto:your-email@example.com).
-
----
+If you have any questions or suggestions regarding the frontend development of the project, feel free to reach out to me at [abhijeetvinkare@gmail.com](mailto:abhijeetvinkare@gmail.com).
