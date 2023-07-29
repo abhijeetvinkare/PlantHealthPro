@@ -58,6 +58,13 @@ Here are some screenshots of the PlantHealthPro app:
 
 ![preview1](https://github.com/abhijeetvinkare/PlantHealthPro/assets/97100940/5f61dfbd-0421-4e4e-81b4-2886b752e220)
 
+![preview2](https://github.com/abhijeetvinkare/PlantHealthPro/assets/97100940/397c4279-b259-4529-a1ba-f6cf8a194ec8)
+
+![preview3](https://github.com/abhijeetvinkare/PlantHealthPro/assets/97100940/71eb10a8-0771-4919-bfb0-d406a21e85b5)
+
+![preview4](https://github.com/abhijeetvinkare/PlantHealthPro/assets/97100940/cfb222a0-effe-4120-86a6-e97e5e71d6c1)
+
+
 
 ## 👩‍🍳 Contact
 
