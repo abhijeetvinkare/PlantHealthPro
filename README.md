@@ -56,9 +56,7 @@ https://plant-health-pro.onrender.com/
 
 Here are some screenshots of the PlantHealthPro app:
 
-<!-- Add preview images here -->
-![Preview](https://i.ibb.co/fnVfdFH/preview1.png)
-<!-- Add more images if needed -->
+![Alt text](/uploads/download_1.jpg?raw=true "Optional Title")
 
 
 ## 👩‍🍳 Contact
