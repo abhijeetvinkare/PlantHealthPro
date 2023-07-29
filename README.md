@@ -5,7 +5,7 @@ PlantHealthPro is an innovative agricultural web application designed to aid far
 
 ## 💪 Frontend Development Contributions
 
-As a frontend developer for this project, I played a key role in enhancing the user experience and extending the functionality of # PlantHealthPro. My contributions include the following:
+As a frontend developer for this project, I played a key role in enhancing the user experience and extending the functionality of PlantHealthPro. My contributions include the following:
 
 - **User Interface Design**: I designed and implemented the user interface to ensure a modern and intuitive experience for users.
 - **Image Upload**: I developed the frontend components for users to upload image.
